@@ -1,7 +1,7 @@
 #!/bin/sh
 
 export hvpn_network="a_net"
-export hvpn_password="tabox"
+export hvpn_password="fabio12345"
 
 dorme(){
 	sleep 2
