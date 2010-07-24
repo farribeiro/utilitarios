@@ -1,4 +1,5 @@
-$part = /dev/sda2
+#!/bin/sh
+export p="/dev/sda2"
 
-sudo swapoff $part
-sudo swapon $part
+sudo swapoff $p
+sudo swapon $p
