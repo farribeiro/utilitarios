@@ -18,7 +18,7 @@ class divx:
         print "Escolha a resolução"
         print "1 => SD480 (720x480)"
         print "2 => HD480 (854x480)"
-        print "3 => HD720"
+        print "3 => HD720 (1280x720)"
         
         resolucao = raw_input("Opção: ")
         
