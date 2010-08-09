@@ -8,7 +8,8 @@
 # Autor: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>
 
 
-import os;
+import os
+
 class gastoenergia:
     def __init__(self):
         ptnc = raw_input("Digite a Potencia(W): ")
