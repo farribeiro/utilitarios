@@ -1,4 +1,4 @@
-#H1 Scripts utilitários de uso diversos
+# Scripts utilitários de uso diversos
 
 Estes scripts servem para auxiliar tarefas rotineiras do meu dia-a-dia.
 
