@@ -1,15 +1,14 @@
 #!/bin/sh
 
-export hvpn_network="a_net"
-export hvpn_password="fabio12345"
+# Este script é muito semelhante aos services dos derivados do DEBIANs
+# É necessário ativar com atencedencia o tuncfg
+
+export hvpn_network=""
+export hvpn_password=""
 
 dorme(){
 	sleep 2
 }
-
-#network=farribeiro
-#password=max3r3ta 
-
 
 start(){
 	hamachi start

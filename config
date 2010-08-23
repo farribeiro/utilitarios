@@ -1,3 +1,4 @@
+ # Arquivo de configuração do ssh
  Host *
 	ControlMaster auto 
 	ControlPath /tmp/%r@%h:%p
