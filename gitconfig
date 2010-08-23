@@ -1,0 +1,18 @@
+[alias]
+	co = checkout
+	st = status
+	cl = clone
+	br = branch
+	ci = commit
+
+[user]
+	name = Fabio Rodrigues Ribeiro
+	email = farribeiro@gmail.com
+[color]
+	branch = auto
+	status = auto
+	merge = auto
+
+[github]
+	token = 56d3a89858bd6a4b9a16cdd943b2a93e
+	user = farribeiro
