@@ -1,6 +1,11 @@
 #!/usr/bin/python
 # -*- coding: utf8 -*-
 
+# Autor: Fábio Rodrigues Ribeiro
+
+# Este script faz a conversão de qualquer formato para DIVX da MS
+# que é comum em players de mesa e automotivo
+
 import os
 import sys
 
