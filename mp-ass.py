@@ -7,6 +7,8 @@
 # Mastroska para legendas SRT
 # A condição de que a legenda tenha o mesmo nome do avi
 
+# Feita alteração no nome do arquivo do script para ser menor
+
 import os
 import sys
 
