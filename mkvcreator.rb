@@ -2,8 +2,8 @@
 
 #Autor: Fábio Rodrigues Ribeiro
 
-#Este script faz a conversão para container MASTROSKA e a 
-#junção de legenda externa no container MASTROSKA
+#Este script faz a conversão para container MASTROSKA e a junção de legenda 
+# externa no container
 
 class Mkvcreator
 
