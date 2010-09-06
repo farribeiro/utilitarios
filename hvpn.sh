@@ -11,26 +11,40 @@ dorme(){
 }
 
 start(){
+	tuncfg
+	
 	hamachi start
 	dorme 
+	
 	hamachi set-nick farribeiro_note
 	dorme
+	
 	hamachi login
 	dorme
+	
 	hamachi join $hvpn_network $hvpn_password
 	dorme
+	
 	hamachi go-online $hvpn_network
 }
 
 stop(){
 	hamachi go-offline $hvpn_network
 	dorme
+	
 	hamachi leave $hvpn_network
 	dorme
+	
 	hamachi logout
 	dorme
+	
 	hamachi stop
 }
+
+tuncfg(){
+	sudo tuncfg
+}
+
 case "$1" in
 	'start')
 		start
