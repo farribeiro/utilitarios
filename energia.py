@@ -21,5 +21,5 @@ class gastoenergia:
 
         preco_final = ((KW * float(preco) * float(horas4dia)) * float(dias))
 
-        print "O gasto é de R$ %.2f" % preco_final
+        print "\nO gasto é de R$ %.2f" % preco_final
 g = gastoenergia();
