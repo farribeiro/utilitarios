@@ -11,8 +11,13 @@ see:
 pdf:
 	pdflatex livro.tex
 
-clean:
-	rm -rf *.aux *.log *.toc
+clean: clean_log clean_toc
 
-clean_all: clean
+clean_log:
+	rm -rf *.aux *.log 
+	
+clean_toc: 
+	rm -rf *.toc
+
+clean_all: clean clean_toc
 	rm -rf *.dvi *.pdf
