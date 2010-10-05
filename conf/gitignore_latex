@@ -1,0 +1,7 @@
+*.swp
+.tex
+Makefile
+out
+.gitignore
+*.pdf
+*.dvi
