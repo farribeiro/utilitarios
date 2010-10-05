@@ -1,9 +1,10 @@
-all: dvi dvi clean
+all: dvi 
 
 final: pdf pdf clean
 
 dvi: 
-	latex livro.tex
+	latex --output-dir out livro.tex
+	mv out/livro.dvi .
 
 see:
 	evince livro.dvi
