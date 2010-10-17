@@ -1,7 +1,5 @@
 all: dvi 
 
-final: pdf pdf clean
-
 dvi: 
 	latex --output-dir out livro.tex
 	mv out/livro.dvi .
