@@ -5,3 +5,6 @@ out
 .gitignore
 *.pdf
 *.dvi
+*.aux
+*.log
+*.toc
