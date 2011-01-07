@@ -5,7 +5,7 @@ dvi:
 	mv out/livro.dvi .
 
 see:
-	evince livro.dvi
+	nohup evince livro.dvi&
 
 pdf:
 	pdflatex livro.tex
