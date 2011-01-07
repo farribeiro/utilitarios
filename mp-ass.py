@@ -16,6 +16,6 @@ import sys
 class mplayerass:
     
     def __init__(self):
-        os.system("mplayer -ass -ass-font-scale 2 " + sys.argv[1])
+        os.system("mplayer -utf8 -ass -ass-font-scale 2 " + sys.argv[1])
         
 m = mplayerass()
