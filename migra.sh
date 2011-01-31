@@ -1,7 +1,4 @@
 #!/bin/bash
-# Este script é muito semelhante aos services dos derivados do DEBIANs
-# É necessário ativar com atencedencia o tuncfg
-
 
 clonar(){
 	d if=$2 of=imagem_$2
