@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#dd if=? of=?
+
+
+mkfs.??
+rsync -Cav ? ?
