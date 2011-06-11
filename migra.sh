@@ -5,7 +5,7 @@ clonar(){
 }
 
 migrar(){
-	rsync -Cav $2 $3 
+	rsync -av $2 $3 
 }
 
 case "$1" in
