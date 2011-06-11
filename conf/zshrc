@@ -9,12 +9,15 @@ export INPUTRC="/etc/inputrc"
 export LESS="-R"
 export JAVA_HOME=/home/fabio/jdk
 export JRUBY_HOME=/home/fabio/jruby
-#export JRUBY_CP=$JRUBY_HOME/lib
-export GEM_HOME=$HOME/.gems/1.8 #export GEM_PATH=$GEM_HOME/1.8
+export JRUBY_CP=$JRUBY_HOME/lib
+export RAILS_ENV="development"
+export GEM_HOME=$HOME/.gems/1.8
+export GEM_PATH=$GEM_HOME
 export CLASSPATH=. #:$JRUBY_CP
-export MAVEN_HOME=/home/fabio/apache-maven-2.1.0
+#export SCALA_HOME=/home/fabio/scala
+export MAVEN_HOME=/home/fabio/apache-maven-3.0.3
 export M2=$MAVEN_HOME/bin
-export PATH=$PATH:$JAVA_HOME:$JAVA_HOME/bin:$CLASSPATH:$M2:JRUBY_HOME:$JRUBY_HOME/bin:
+export PATH=$PATH:$JAVA_HOME:$JAVA_HOME/bin:$CLASSPATH:$M2:$GEM_PATH/bin:$JRUBY_HOME:$JRUBY_HOME/bin:$HOME/Documentos/dev/utilitarios
 
 # Salvar 50*10^3 eventos no histórico.
 HISTFILE=${HOME}/.zsh_history
@@ -171,10 +174,11 @@ zmodload -i zsh/mathfunc
 zmodload -i zsh/complist
 
 # Aliases
+#alias smbrefresh
 alias hsize="df -h|grep /home"
 alias svns="svnserve -d -r /home/fabio/auxiliar.svn"
 alias gcp="screen google-chrome --enable-plugins"
-alias ls='ls -F --group-directories-first --color=always'
+alias ls="ls -F --group-directories-first --color=always"
 #alias gcc='gcc -Wall'
 #alias rm='rm -iv'
 #alias cp='cp -v'
@@ -268,3 +272,4 @@ shot ()
 {
 	import -w root -quality 75 "$HOME/shot-$(date +%s).png"
 }
+ #[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
