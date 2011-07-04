@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# (c) Fábio Rodrigues Ribeiro - http://farribeiro.blogspot.com
+# (c) FÃ¡bio Rodrigues Ribeiro - http://farribeiro.blogspot.com
 
 # Copying and distribution of this file, with or without modification, are permitted
 # in any medium without royalty provided the copyright notice and this notice are 
@@ -32,15 +32,16 @@ case "$1" in
 	'backup')
 		bk
 	;;
-	'forca-migracao')
-	    migrar
-       ;;
        'help')
-            echo "Este utilit�rio realiza facilita a migra��o de de dados para outra HD/PARTI��O para c�pia utiliza o utilit�rio RSYNC e clonagem o DD
+            echo "Este utilitário facilita a migração de de dados para outra HD/PARTIÇÃO para cópia utilizando o utilitário RSYNC para e para clonagem usando DD
+
+Sintaxe:
+migra.sh [opção] <origem> <destino>
 
 Comandos aceitos:
-
-clonar    Clonagem da parti��o/hd
-to-ext4   Prepara a parti��o de destino para receber o FS ext4 e migar os dados"
+backup        Faz backup e apaga automaticamente arquivos que não existe mais na origem
+clonar        Clonagem da partição/hd
+to-ext4       Prepara a partição de destino com ext4 e migar os dados
+to-raiserfs   Prepara a partição de destino com raiserFS e migar os dados"
          ;;     
 esac
