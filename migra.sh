@@ -18,19 +18,19 @@ bk(){
 	rsync -av --delete $2 $3
 }
 case "$1" in
-	'clonar')
-		clonar
-	;;
-	'to-ext4')
+	'se')
 		mkfs.ext4 $3
 		migrar
 	;;
-	'to-raiserFS')
+	'sr')
 		mkfs.raiserfs $3
 		migrar
 	;;
-	'backup')
+	'bk')
 		bk
+	;;
+	'dd')
+		clonar
 	;;
        'help')
             echo "Este utilitário facilita a migração de de dados para outra HD/PARTIÇÃO para cópia utilizando o utilitário RSYNC para e para clonagem usando DD
@@ -39,9 +39,10 @@ Sintaxe:
 migra.sh [opção] <origem> <destino>
 
 Comandos aceitos:
-backup        Faz backup e apaga automaticamente arquivos que não existe mais na origem
-clonar        Clonagem da partição/hd
-to-ext4       Prepara a partição de destino com ext4 e migar os dados
-to-raiserfs   Prepara a partição de destino com raiserFS e migar os dados"
+bk    Faz backup e apaga automaticamente arquivos que não existe mais na origem
+dd    Cria e recupera imagem da partição/hd
+se    Prepara a partição de destino com ext4 e migar os dados
+sr    Prepara a partição de destino com raiserFS e migar os dados
+help  Imprime este guia"
          ;;     
 esac
