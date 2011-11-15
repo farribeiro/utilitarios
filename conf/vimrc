@@ -1,14 +1,10 @@
-"Coloração do texto
-syntax on
-"Dicionário em Portugues
-set spelllang=pt
-"Cores para fundo preto
-set background=dark
-"Força encoding e formato unix
-set fenc=utf8
-set enc=utf8
-set fileformat=unix
-"set backupext=.bak
+syntax on "Coloração do texto
+set spelllang=pt "Dicionário em Portugues
+set background=dark "Cores para fundo preto
+set fenc=utf8 "Define enconding do arquivo
+set enc=utf8 "Define encoding do texto
+set fileformat=unix "Formato de arquivo unix
+set backupext=.bak 
 set ai!
 set nu
 set ignorecase
