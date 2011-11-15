@@ -8,11 +8,11 @@
 export INPUTRC="/etc/inputrc"
 export LESS="-R"
 export JAVA_HOME=/home/fabio/jdk
-export JRUBY_HOME=/home/fabio/jruby
-export JRUBY_CP=$JRUBY_HOME/lib
-export RAILS_ENV="development"
-export GEM_HOME=$HOME/.gems/1.8
-export GEM_PATH=$GEM_HOME
+#export JRUBY_HOME=/home/fabio/jruby
+#export JRUBY_CP=$JRUBY_HOME/lib
+#export RAILS_ENV="development"
+#export GEM_HOME=$HOME/.gems/1.8
+#export GEM_PATH=$GEM_HOME
 export CLASSPATH=. #:$JRUBY_CP
 #export SCALA_HOME=/home/fabio/scala
 export MAVEN_HOME=/home/fabio/apache-maven-3.0.3
@@ -272,4 +272,4 @@ shot ()
 {
 	import -w root -quality 75 "$HOME/shot-$(date +%s).png"
 }
- #[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+ [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
