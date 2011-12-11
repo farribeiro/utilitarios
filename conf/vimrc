@@ -1,16 +1,16 @@
-syntax on "Coloração do texto
-set spelllang=pt "Dicionário em Portugues
+syntax on "Coloração do texto para salvar arquivo
 set background=dark "Cores para fundo preto
 set fenc=utf8 "Define enconding do arquivo
 set enc=utf8 "Define encoding do texto
 set fileformat=unix "Formato de arquivo unix
-set backupext=.bak 
+set backupext=.bak
+set backupdir=~/.vim/bk/ "Determina local do backup
 set ai!
 set nu
 set ignorecase
 set smartcase
 set is
-set lbr!
+set lbr! "Na visualização força a quebra de linha
 "set cindent
 
 " code completation HTML
@@ -26,3 +26,18 @@ imap { {}<left>
 imap ( ()<left>
 imap [ []<left>
 imap < <><left>
+
+set spelllang=pt "Dicionário em Português
+map <F3> <ESC>:set spell<CR>
+
+"Atalho para salvar arquivo
+map <F2> <ESC>:w<CR> 
+
+"Chama .vimrc
+map <F12> <ESC>:e ~/.vimrc<CR>
+
+"Recarrega .vimrc
+map <F5> <ESC>:source ~/.vimrc<CR>
+
+"Ativa syntax txt2tags
+au BufNewFile,BufRead *.t2t set ft=txt2tags 
