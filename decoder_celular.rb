@@ -5,7 +5,13 @@ require "base64"
 
 class Decoder_celular
 	def initialize
-		get "/base64/*" do
+		get '/' do
+			'<h1>Para usar:</h1>
+			<ul>
+			<li>/<strong>base64</strong>/{setenca}</li>'
+		end
+
+		get '/base64/*' do
 			content_type 'text/css', :charset => 'utf-8'
 			link = params["splat"]
 			"#{Base64.decode64(link[0]).to_s}"
