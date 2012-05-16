@@ -18,5 +18,5 @@ clean_log:
 clean_toc: 
 	rm -rf *.toc
 
-clean_all: clean clean_toc
+purge: clean clean_toc
 	rm -rf *.dvi *.pdf
