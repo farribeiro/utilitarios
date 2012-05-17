@@ -1,0 +1,18 @@
+# You may comment out this entry, but any other modifications may be lost.
+# deb http://ppa.launchpad.net/gnome3-team/gnome3/ubuntu precise main
+# deb http://ppa.launchpad.net/pidgin-developers/ppa/ubuntu precise main # desabilitado na atualização para natty desabilitado na atualização para oneiric desabilitado na atualização para precise
+# deb-src http://ppa.launchpad.net/gnome3-team/gnome3/ubuntu precise main
+## Medibuntu - Ubuntu 9.04 "jaunty jackalope"
+## Please report any bug on https://bugs.launchpad.net/medibuntu/
+### THIS FILE IS AUTOMATICALLY CONFIGURED ###
+deb http://dl.google.com/linux/chrome/deb/ stable main # desabilitado na atualização para precise
+deb http://dl.google.com/linux/talkplugin/deb/ stable main # desabilitado na atualização para natty desabilitado na atualização para oneiric desabilitado na atualização para precise
+deb http://download.virtualbox.org/virtualbox/debian precise contrib # desabilitado na atualização para natty desabilitado na atualização para oneiric desabilitado na atualização para precise
+deb http://packages.medibuntu.org/ precise free non-free # desabilitado na atualização para natty desabilitado na atualização para oneiric desabilitado na atualização para precise
+deb http://ppa.launchpad.net/git-core/ppa/ubuntu precise main
+deb http://ppa.launchpad.net/libreoffice/ppa/ubuntu precise main # desabilitado na atualização para precise
+deb http://ppa.launchpad.net/pidgin-developers/ppa/ubuntu precise main # desabilitado na atualização para natty
+deb-src http://packages.medibuntu.org/ precise free non-free # desabilitado na atualização para natty desabilitado na atualização para oneiric desabilitado na atualização para precise
+deb-src http://ppa.launchpad.net/git-core/ppa/ubuntu precise main
+deb-src http://ppa.launchpad.net/libreoffice/ppa/ubuntu precise main # desabilitado na atualização para precise
+deb-src http://ppa.launchpad.net/pidgin-developers/ppa/ubuntu precise main # desabilitado na atualização para natty
