@@ -17,7 +17,7 @@ export LESS="-R"
 #export PATH=$PATH:$JAVA_HOME:$JAVA_HOME/bin:$CLASSPATH:$M2:$GEM_PATH/bin:$JRUBY_HOME:$JRUBY_HOME/bin:$HOME/Documentos/dev/utilitarios
 export GEM_HOME=$HOME/.gems/1.8
 export GEM_PATH=$GEM_HOME
-export PATH=$PATH:$GEM_PATH/bin:$HOME/Documentos/dev/utilitarios
+export PATH=$PATH:$GEM_PATH/bin:$HOME/Documentos/devel/utilitarios
 
 # Salvar 50*10^3 eventos no histórico.
 HISTFILE=${HOME}/.zsh_history
@@ -179,6 +179,7 @@ alias hsize="df -h|grep /home"
 alias svns="svnserve -d -r /home/fabio/auxiliar.svn"
 alias gcp="screen google-chrome --enable-plugins"
 alias ls="ls -F --group-directories-first --color=always"
+alias lorp="deborphan | sudo xargs apt-get purge -y"
 #alias gcc='gcc -Wall'
 #alias rm='rm -iv'
 #alias cp='cp -v'
@@ -273,3 +274,5 @@ shot ()
 	import -w root -quality 75 "$HOME/shot-$(date +%s).png"
 }
  [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
