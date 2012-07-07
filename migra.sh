@@ -14,9 +14,6 @@ migrar(){
 	rsync -av $2 $3 
 }
 
-bk(){
-	rsync -av --delete $2 $3
-}
 case "$1" in
 	'se')
 		mkfs.ext4 $3
@@ -27,7 +24,7 @@ case "$1" in
 		migrar
 	;;
 	'bk')
-		bk
+		rsync -av --delete $2 $3
 	;;
 	'dd')
 		clonar
