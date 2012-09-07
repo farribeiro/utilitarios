@@ -179,7 +179,6 @@ alias netfor = "sudo sysctl -w net.ipv4.ip_forward=1; sudo iptables -t nat -A PO
 alias gingadd="echo "$1" >> .gitignore"
 alias hsize="df -h | grep /home"
 alias svns="svnserve -d -r /home/fabio/auxiliar.svn"
-alias gcp="screen google-chrome --enable-plugins"
 alias ls="ls -F --group-directories-first --color=always"
 alias lorp="deborphan | sudo xargs apt-get purge -y"
 #alias gcc='gcc -Wall'
