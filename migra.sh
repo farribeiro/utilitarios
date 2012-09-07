@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# (c) FÃ¡bio Rodrigues Ribeiro - http://farribeiro.blogspot.com
+# (c) Fábio Rodrigues Ribeiro - http://farribeiro.blogspot.com
 
 # Copying and distribution of this file, with or without modification, are permitted
 # in any medium without royalty provided the copyright notice and this notice are 
@@ -24,12 +24,14 @@ case "$1" in
 		migrar
 	;;
 	'bk')
+		#sincroniza origem e destino
 		rsync -av --delete $2 $3
 	;;
 	'dd')
 		clonar
 	;;
 	'bk2mk')
+		#sincroniza origem e destino para FAT32
 		rsync -av --delete --size-only --modify-window=1 $2 $3
 	;;
        'help')
