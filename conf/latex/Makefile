@@ -1,11 +1,11 @@
 all: dvi 
 
 dvi: 
-	latex --output-dir out livro.tex
-	mv out/livro.dvi .
+	latex --output-dir /tmp/latex livro.tex
+	mv /tmp/latex/livro.dvi .
 
 see:
-	nohup evince livro.dvi&
+	evince livro.dvi&disown
 
 pdf:
 	pdflatex livro.tex
