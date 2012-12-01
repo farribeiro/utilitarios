@@ -10,6 +10,8 @@ set nu
 set ignorecase
 set smartcase
 set is
+set hls
+set magic
 set lbr! "Na visualização força a quebra de linha
 "set cindent
 
