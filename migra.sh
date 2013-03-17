@@ -15,27 +15,28 @@ migrar(){
 }
 
 case "$1" in
-	'se')
+	'-e')
 		mkfs.ext4 $3
 		migrar
 	;;
-	'sr')
+	'-r')
 		mkfs.raiserfs $3
 		migrar
 	;;
-	'bk')
+	'-b')
 		#sincroniza origem e destino
 		rsync -av --delete $2 $3
 	;;
-	'dd')
+	'-c')
 		clonar
 	;;
-	'bk2mk')
+	'-bk2mk')
 		#sincroniza origem e destino para FAT32
 		rsync -av --delete --size-only --modify-window=1 $2 $3
 	;;
-       'help')
-            echo "Este utilitário facilita a migração de de dados para outra HD/PARTIÇÃO para cópia utilizando o utilitário RSYNC para e para clonagem usando DD
+       '-h' | '-?' )
+            echo "
+Este utilitário facilita a migração de de dados para outra HD/PARTIÇÃO para cópia utilizando o utilitário RSYNC para e para clonagem usando DD
 
 Sintaxe:
 migra.sh [opção] <origem> <destino>
