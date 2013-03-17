@@ -183,7 +183,7 @@ alias ls="ls -F --group-directories-first --color=always"
 alias lorp="deborphan | sudo xargs apt-get purge -y"
 #alias gcc='gcc -Wall'
 #alias rm='rm -iv'
-#alias cp="cp -a"
+alias cp="cp -a"
 #alias mv='mv -v'
 #alias mkdir='mkdir -pv'
 #alias pacman="sudo pacman-color"
@@ -197,6 +197,7 @@ alias lorp="deborphan | sudo xargs apt-get purge -y"
 #alias db.lck_rm='sudo rm -rf /var/lib/pacman/db.lck'
 #alias svim="sudo vim"
 #alias apt-update="update-manager"
+#alias ls="ls -la"
 alias apt-dist="update-manager -c"
 alias ff="~/firefox/firefox"
 alias tb="~/thunderbird/thunderbird"
