@@ -8,4 +8,4 @@ nbstat -RR
 ipconfig /flushdns
 ipconfig /registerdns
 netsh interface ip delete arpcache
-pause
+pauseNew-PSDrive –Name “K” –PSProvider FileSystem –Root “\\Note-infra\d” –Persist
