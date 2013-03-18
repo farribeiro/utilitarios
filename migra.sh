@@ -11,7 +11,7 @@ clonar(){
 }
 
 migrar(){
-	rsync -av $2 $3 
+	rsync -av --progress $2 $3 
 }
 
 case "$1" in
@@ -25,7 +25,7 @@ case "$1" in
 	;;
 	'-b')
 		#sincroniza origem e destino
-		rsync -av --delete $2 $3
+		rsync -av --progress --delete $2 $3
 	;;
 	'-c')
 		clonar
