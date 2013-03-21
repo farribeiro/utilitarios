@@ -3,7 +3,7 @@
 # (c) Fábio Rodrigues Ribeiro - http://farribeiro.blogspot.com
 
 # Copying and distribution of this file, with or without modification, are permitted
-# in any medium without royalty provided the copyright notice and this notice are 
+# in any medium without royalty provided the copyright notice and this notice are
 # preserved.  This file is offered as-is, without any warranty.
 
 clonar(){
@@ -11,7 +11,7 @@ clonar(){
 }
 
 migrar(){
-	rsync -av --progress $2 $3 
+	rsync -av --progress $2 $3
 }
 
 case "$1" in
@@ -48,5 +48,5 @@ se    Prepara a partição de destino com ext4 e migar os dados
 sr    Prepara a partição de destino com raiserFS e migar os dados
 bk2mk Faz backup para pendrive
 help  Imprime este guia"
-         ;;     
+         ;;
 esac
