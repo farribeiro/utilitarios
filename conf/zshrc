@@ -179,7 +179,7 @@ alias netfor="sudo sysctl -w net.ipv4.ip_forward=1; sudo iptables -t nat -A POST
 alias gingadd="echo "$1" >> .gitignore"
 alias hsize="df -h | grep /home"
 alias svns="svnserve -d -r /home/fabio/auxiliar.svn"
-alias ls="ls -F --group-directories-first --color=always"
+alias ls="ls -lahF --group-directories-first --color=always"
 alias lorp="deborphan | sudo xargs apt-get purge -y"
 #alias gcc='gcc -Wall'
 #alias rm='rm -iv'
@@ -201,6 +201,7 @@ alias cp="cp -a"
 alias apt-dist="update-manager -c"
 alias ff="~/firefox/firefox"
 alias tb="~/thunderbird/thunderbird"
+alias sed="sed -r"
 
 # Esses alias permitem abrir um arquivo diretamente (ex, % file.txt e o vim já é aberto).
 alias -s html=$BROWSER
