@@ -29,7 +29,7 @@ unset mailpath MAILCHECK
 
 # Configuracoes do Locale (encontre seu locale com 'locale -a' [sem as aspas])
 export LANG="pt_BR.utf8"
-export LANGUAGE="pt_BR.utf8"
+#export LANGUAGE="pt_BR.utf8"
 export LC_COLLATE="C"
 umask 022
 

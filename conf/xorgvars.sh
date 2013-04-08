@@ -11,3 +11,4 @@
 export JAVA_HOME=/home/fabio/jdk
 export CLASSPATH=.
 export PATH=$PATH:$JAVA_HOME:$JAVA_HOME/bin:$CLASSPATH
+export LANGUAGE="pt_BR.utf8"
