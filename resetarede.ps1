@@ -7,4 +7,3 @@ nbstat -RR
 ipconfig /flushdns
 ipconfig /registerdns
 netsh interface ip delete arpcache
-pause
