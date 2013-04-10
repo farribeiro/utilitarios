@@ -1,11 +1,11 @@
-rem Roda o diagnostico
+echo "Rodando o diagnostico"
 ClientDiag.exe
 
-rem Instala Agent mais recente
+echo "Instala Agent mais recente"
 WindowsUpdateAgent30.exe /quiet /norestart
 
 
-rem Stop, reconfigura e start de serviços
+echo "Stop, reconfigura e start de serviços"
 sc stop wuauserv
 sc stop bits
 sc config wuauserv start= auto
@@ -13,7 +13,7 @@ sc config bits start= auto
 sc start wuauserv
 sc start bits
 
-#Verificar atualizações
+echo "Verificar atualizações"
 wuauclt /reseteulas 
 wuauclt /resetauthorization
 wuauclt /detectnow
