@@ -1,5 +1,4 @@
-
-#!/bin/bash
+#!/bin/sh
 
 # Este script varre o servidor de arquivos em busca de arquivos executáveis e autorun na raiz do compartilhamento
 
