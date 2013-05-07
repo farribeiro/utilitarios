@@ -2,10 +2,8 @@
 
 mkdir 800x600
 
-export a = ""
-
 log(){
-	export backup = date %d%m%Y | sed -e "s/^\(\d\{2\}\)\(\1\)\(\d\{4\}\)/\1-\2-\3/g"
+	backup = date %d%m%Y | sed -e "s/^\(\d\{2\}\)\(\1\)\(\d\{4\}\)/\1-\2-\3/g"
 }
 
 backup(){
@@ -13,12 +11,12 @@ backup(){
 }
 
 padrao(){
-	find $dir -mtime +$dias -type f |
+	find $dir -mtime +$dias -type f #|
 }
 
-resize{
+resize(){
 	shopt -s nocasematch
-	for i in *.jpg | *.jpeg; do
+	for i in (*.jpg||*.jpeg); do
 		convert -resize 800x600 $i "800x600/$i"
 	done
 }
@@ -52,5 +50,6 @@ case $1 in
 
 	"-h" | "-?" | *)
 		echo "sintaxe: [-b|-p"
+		exit 0 
 	;;
 esac
