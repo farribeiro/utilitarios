@@ -13,6 +13,7 @@
 	branch = always
 	status = always
 	merge = always
+	diff = always
 
 [github]
 	token = 
