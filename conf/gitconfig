@@ -9,9 +9,10 @@
 	name = Fabio Rodrigues Ribeiro
 	email = farribeiro@gmail.com
 [color]
-	branch = auto
-	status = auto
-	merge = auto
+	ui = always
+	branch = always
+	status = always
+	merge = always
 
 [github]
 	token = 
