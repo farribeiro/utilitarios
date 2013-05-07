@@ -181,7 +181,7 @@ alias gingadd="echo "$1" >> .gitignore"
 alias hsize="df -h | grep /home"
 alias svns="svnserve -d -r /home/fabio/auxiliar.svn"
 alias ls="ls -lahF --group-directories-first --color=always"
-alias lorp="deborphan | sudo xargs apt-get purge -y"
+alias dorp="deborphan | sudo xargs apt-get purge -y"
 #alias gcc='gcc -Wall'
 #alias rm='rm -iv'
 alias cp="cp -a"
@@ -203,6 +203,7 @@ alias apt-dist="update-manager -c"
 alias ff="~/firefox/firefox"
 alias tb="~/thunderbird/thunderbird"
 alias sed="sed -r"
+alias homeloc="locate $HOME | egrep $1" 
 
 # Esses alias permitem abrir um arquivo diretamente (ex, % file.txt e o vim já é aberto).
 alias -s html=$BROWSER
