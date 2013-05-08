@@ -16,9 +16,17 @@ padrao(){
 
 resize(){
 	shopt -s nocasematch
-	for i in (*.jpg||*.jpeg); do
+	for i in (*.jpg||*.jpeg||*.png); do
 		convert -resize 800x600 $i "800x600/$i"
 	done
+}
+
+resize_web(){
+	nkdir www
+	 shopt -s nocasematch
+	 for i in (*.jpg||*.jpeg||*.png); do
+	 	convert -depth 72 $i "www/$i";
+	 done
 }
 
 grava(){
@@ -47,6 +55,8 @@ case $1 in
 	"-r" )
 		resize
 	;;
+
+	"-a" | "--avatar"
 
 	"-h" | "-?" | *)
 		echo "sintaxe: [-b|-p"
