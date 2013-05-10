@@ -175,7 +175,7 @@ zmodload -i zsh/mathfunc
 zmodload -i zsh/complist
 
 # Aliases
-#alias smbrefresh=
+alias smbrefresh="sudo su -c \"service smbd restart;service nmbd restart\""
 alias netfor="sudo sysctl -w net.ipv4.ip_forward=1; sudo iptables -t nat -A POSTROUTING -o $1 -j MASQUERADE"
 alias gingadd="echo "$1" >> .gitignore"
 alias hsize="df -h | grep /home"
@@ -204,6 +204,7 @@ alias ff="~/firefox/firefox"
 alias tb="~/thunderbird/thunderbird"
 alias sed="sed -r"
 alias homeloc="locate $HOME | egrep $1" 
+alias pyserver="python -m SimpleHTTPServer"
 
 # Esses alias permitem abrir um arquivo diretamente (ex, % file.txt e o vim já é aberto).
 alias -s html=$BROWSER
