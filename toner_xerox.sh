@@ -23,7 +23,7 @@ sed -r "s/^(.+\]?).+is at ([0-9]{1,3}?%).*$/<TR><TD>\1<\/TD><TD>\2<\/TD><\/TR>/g
 sed -r "s/<TR>(.*Magenta.*<\/TR>)/<TR STYLE=\"background-color: MAGENTA\">\1/g" |
 sed -r "s/<TR>(.*Yellow.*<\/TR>)/<TR STYLE=\"background-color: YELLOW\">\1/g" |
 sed -r "s/<TR>(.*Cyan.*<\/TR>)/<TR STYLE=\"background-color: CYAN\">\1/g" |
-sed -r "/^$/d" >> $limpo
+sed -r "/^$|Waste|Transfer|Fuser/d" >> $limpo
 
 echo "</table>" >> $limpo
 
