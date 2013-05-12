@@ -205,6 +205,7 @@ alias tb="~/thunderbird/thunderbird"
 alias sed="sed -r"
 alias homeloc="locate $HOME | egrep $1" 
 alias pyserver="python -m SimpleHTTPServer"
+alias swap2ram="sudo swapoff -a; swapon -a"
 
 # Esses alias permitem abrir um arquivo diretamente (ex, % file.txt e o vim já é aberto).
 alias -s html=$BROWSER
