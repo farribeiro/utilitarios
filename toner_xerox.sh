@@ -15,19 +15,18 @@ limpa
 echo "<table border=\"1\">" > $limpo
 # <tr><th>Printer</th><th>BLACK</th><th>YELLOW</th><th>MAGENTA</th><th>CYAN</th></tr>" > $limpo
 
-sed -r "s/, ?|;;?/\n/g" $bruto |
-sed -r "s/^.*Developer.*$//g" |
-sed -r "s/^.+=.*$//g" |
-sed -r "s/OK|WARNING|CRITICAL|^[0-9]+$|^ ?[0-9].*$//g" |
+sed -r "s/Waste.*$//g" $bruto |
+sed -r "s/, ?|;;?/\n/g" |
+sed -r "s/OK|WARNING|CRITICAL//g" |
 sed -r "s/^(.+\]?).+is at ([0-9]{1,3}?%).*$/<TR><TD>\1<\/TD><TD>\2<\/TD><\/TR>/g" |
 sed -r "s/<TR>(.*Magenta.*<\/TR>)/<TR STYLE=\"background-color: MAGENTA\">\1/g" |
 sed -r "s/<TR>(.*Yellow.*<\/TR>)/<TR STYLE=\"background-color: YELLOW\">\1/g" |
 sed -r "s/<TR>(.*Cyan.*<\/TR>)/<TR STYLE=\"background-color: CYAN\">\1/g" |
-sed -r "/^$|Waste|Transfer|Fuser/d" >> $limpo
+sed -r "/^$/d" >> $limpo
 
 echo "</table>" >> $limpo
 
-cat $limpo | mutt -e "set content_type=text/html" -s "Consumíveis $1" $2
+cat $limpo #| mutt -e "set content_type=text/html" -s "Consumíveis $1" $2
 
 limpa
 
