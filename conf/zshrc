@@ -1,6 +1,7 @@
 #########################
 #-*- coding: utf-8 -*-            
-#Alterado por: Phillipe Smith                       
+#Criado por: Phillipe Smith
+#Melhorado por: Fábio Rodrigues Ribeiro
 #########################
 
 #export MANPATH="/usr/man:/usr/X11R6/man"
@@ -183,7 +184,7 @@ alias svns="svnserve -d -r /home/fabio/auxiliar.svn"
 alias ls="ls -lahF --group-directories-first --color=always"
 alias dorp="deborphan | sudo xargs apt-get purge -y"
 #alias gcc='gcc -Wall'
-#alias rm='rm -iv'
+alias rm='rm -iv'
 alias cp="cp -a"
 #alias mv='mv -v'
 #alias mkdir='mkdir -pv'
