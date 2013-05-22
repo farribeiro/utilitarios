@@ -1,11 +1,14 @@
 # Sobre este projeto
-Scripts utilitários para uso diversos para auxiliar tarefas rotineiras do meu dia-a-dia. 
+Scripts para auxiliar minhas tarefas do dia-a-dia, muitas delas não são automatizadas e isso é bom para facilitar o dia.
 
-Ainda que não é uma coisa automatizada é o princípio para melhorar a rotinas e sobrar mais tempo para o meu dia-a-dia.
+Espero que seja útil para muitas pessoas,
+Um grande abraço!
 
-Espero que seja útil para muitas pessoas!
+# About this projet
+Utility scripts for my tasks, many of them aren't automatized and that's great for a lazy day.
 
-Um grande abraço.
+I hope it is useful for you,
+A big hug!
 
 # License
-Copying and distribution of this file, with or without modification, are permitted in any medium without royalty provided the copyright notice and this notice are  preserved.  This file is offered as-is, without any warranty.Fábio
+Copying and distribution of this file, with or without modification, are permitted in any medium without royalty provided the copyright notice and this notice are preserved. This file is offered as-is, without any warranty.
