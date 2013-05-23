@@ -1,9 +1,15 @@
 #!/bin/python
 
-#cat postinst | xargs apt-get install -y
+# Script para fazer a limpeza do .home, onde o usuário seleciona em multipla escolha os diretórios para limpeza!
 
-class Pi():
+import os, sys
+
+class oconf:
+	__homedir = "~"
+
+#	def search():
+
+
 	def __init__(self):
-		
-
-p = pi()
+		print "Home dir:", self.__homedir
+o = oconf()
