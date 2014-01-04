@@ -1,17 +1,20 @@
+set nocompatible
+
 syntax on "Coloração do texto para salvar arquivo
 set background=dark "Cores para fundo preto
 set fenc=utf8 "Define enconding do arquivo
 set enc=utf8 "Define encoding do texto
 set fileformat=unix "Formato de arquivo unix
-set backupext=.bak
+set backupext=.bak "Extensão do aquivo de backup
 set backupdir=~/.vim/bk/ "Determina local do backup
-set ai!
+set ai! " Força Identação automática
 set nu
 set ignorecase
 set smartcase
+"set smarttab
 set is
-set hls
-set magic
+set hls "Highlight para busca
+set magic "Força regex
 set lbr! "Na visualização força a quebra de linha
 "set cindent
 
@@ -47,5 +50,6 @@ au BufNewFile,BufRead *.t2t set ft=txt2tags
 "Regex
 "Primeira letra maiúscula
 map <F9> <ESC>:%s/[.!?]\_s\+\a/\U&\E/gc<CR>
+
 "Limpa espaço em branco no fim da linha
 map <F8> <ESC>:%s/ \+$//gc

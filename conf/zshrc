@@ -176,13 +176,14 @@ zmodload -i zsh/mathfunc
 zmodload -i zsh/complist
 
 # Aliases
-alias smbrefresh="sudo su -c \"service smbd restart;service nmbd restart\""
+alias smbrefresh="sudo \"service smbd restart;service nmbd restart\""
 alias netfor="sudo sysctl -w net.ipv4.ip_forward=1; sudo iptables -t nat -A POSTROUTING -o $1 -j MASQUERADE"
 alias gingadd="echo "$1" >> .gitignore"
 alias hsize="df -h | grep /home"
 alias svns="svnserve -d -r /home/fabio/auxiliar.svn"
 alias ls="ls -lahF --group-directories-first --color=always"
 alias dorp="deborphan | sudo xargs apt-get purge -y"
+alias fedorp="sudo package-cleanup --leaves;sudo package-cleanup --orphans"
 #alias gcc='gcc -Wall'
 alias rm='rm -iv'
 alias cp="cp -a"
