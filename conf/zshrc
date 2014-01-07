@@ -182,6 +182,7 @@ alias gingadd="echo "$1" >> .gitignore"
 alias hsize="df -h | grep /home"
 #alias svns="svnserve -d -r /home/fabio/auxiliar.svn"
 alias ls="ls -lahF --group-directories-first --color=always"
+alias lsfor="\ls -1"
 alias dorp="deborphan | sudo xargs apt-get purge -y"
 alias fedorp="su -c \"package-cleanup --leaves -q | xargs yum remove -y;package-cleanup --orphans -q | xargs yum remove -y\""
 #alias gcc='gcc -Wall'
