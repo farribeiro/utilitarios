@@ -7,7 +7,7 @@
 #export MANPATH="/usr/man:/usr/X11R6/man"
 #export LESSCHARSET="latin1"
 export INPUTRC="/etc/inputrc"
-export LESS="-R"
+#export LESS="-R"
 #export JRUBY_HOME=/home/fabio/jruby
 #export JRUBY_CP=$JRUBY_HOME/lib
 #export RAILS_ENV="development"
@@ -184,7 +184,7 @@ alias hsize="df -h | grep /home"
 alias ls="ls -lahF --group-directories-first --color=always"
 alias lsfor="\ls -1"
 alias dorp="deborphan | sudo xargs apt-get purge -y"
-alias fedorp="su -c \"package-cleanup --leaves -q | xargs yum remove -y;package-cleanup --orphans -q | xargs yum remove -y\""
+alias fedorp="sudo \"package-cleanup --leaves -q | xargs yum remove -y;package-cleanup --orphans -q | xargs yum remove -y\""
 #alias gcc='gcc -Wall'
 alias rm='rm -iv'
 alias cp="cp -a"
@@ -202,15 +202,15 @@ alias cp="cp -a"
 #alias svim="sudo vim"
 #alias apt-update="update-manager"
 #alias ls="ls -la"
-alias apt-dist="update-manager -c"
+#alias apt-dist="update-manager -c"
 alias ff="~/firefox/firefox"
 alias tb="~/thunderbird/thunderbird"
 alias sed="sed -r"
 alias homeloc="locate $HOME | egrep $1" 
 alias pyserver="python -m SimpleHTTPServer"
 alias swap2ram="sudo swapoff -a; swapon -a; sysctl -w vm.drop_caches=3"
-alias convert="convert -monitor -verbose -depth 8"
-alias compjpg="mogrify -monitor -verbose -resize 1024x768 -depth 8 *"
+alias convert="convert -monitor -verbose"
+alias compjpg="mogrify -monitor -verbose -resize 1024x768 *"
 
 # Esses alias permitem abrir um arquivo diretamente (ex, % file.txt e o vim já é aberto).
 alias -s html=$BROWSER
@@ -283,8 +283,14 @@ bindkey '^i' expand-or-complete-prefix
 #shot - takes a screenshot of your current window
 shot ()
 {
-	import -w root -quality 75 "$HOME/shot-$(date +%s).png"
+import -w root -quality 75 "$HOME/shot-$(date +%s).png"
 }
  [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+
+dcomp (){
+for i in `\ls -1`; do
+	jpegoptim -o -m80 --strip-all "$1"; 
+done
+}
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
