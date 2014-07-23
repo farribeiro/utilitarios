@@ -1,9 +1,10 @@
 [alias]
 	co = checkout
-	st = status
+	st = status -s
 	cl = clone
 	br = branch
 	ci = commit
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 
 [user]
 	name = Fabio Rodrigues Ribeiro
