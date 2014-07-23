@@ -209,7 +209,7 @@ alias sed="sed -r"
 alias homeloc="locate $HOME | egrep $1" 
 alias pyserver="python -m SimpleHTTPServer"
 alias swap2ram="sudo swapoff -a; swapon -a; sysctl -w vm.drop_caches=3"
-alias convert="convert -monitor" #-depth 72"
+alias convert="convert -monitor -verbose"
 
 # Esses alias permitem abrir um arquivo diretamente (ex, % file.txt e o vim já é aberto).
 alias -s html=$BROWSER
