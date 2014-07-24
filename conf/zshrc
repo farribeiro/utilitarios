@@ -211,6 +211,7 @@ alias pyserver="python -m SimpleHTTPServer"
 alias swap2ram="sudo swapoff -a; swapon -a; sysctl -w vm.drop_caches=3"
 alias convert="convert -monitor -verbose"
 alias compjpg="mogrify -monitor -verbose -resize 1024x768 *"
+alias mozjpeg="/opt/libmozjpeg/bin/jpegtran"
 
 # Esses alias permitem abrir um arquivo diretamente (ex, % file.txt e o vim já é aberto).
 alias -s html=$BROWSER
