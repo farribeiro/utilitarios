@@ -1,14 +1,15 @@
 all: dvi 
 
 dvi: 
-	latex --output-dir /tmp/latex livro.tex
-	mv /tmp/latex/livro.dvi .
+	latex --output-dir /tmp livro.tex
+	mv /tmp/livro.dvi .
 
 see:
 	evince livro.dvi&disown
 
 pdf:
-	pdflatex livro.tex
+	pdflatex -output-directory /tmp livro.tex
+	mv /tmp/livro.pdf .
 
 clean: clean_log clean_toc
 
