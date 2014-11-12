@@ -16,7 +16,9 @@ node 	"common" {
 		"mutt",
 		"net-snmp",
 		"rsync",
-		"at"
+		"at",
+		"git"
+		"tig"
 		]:
 		ensure => present,
 	}
