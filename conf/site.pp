@@ -18,7 +18,8 @@ node 	"common" {
 		"rsync",
 		"at",
 		"git"
-		"tig"
+		"tig",
+		"epel-release"
 		]:
 		ensure => present,
 	}
