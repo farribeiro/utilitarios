@@ -19,6 +19,8 @@ node 	"common" {
 		"at",
 		"git"
 		"tig",
+		"openvm-tools-nox11",
+		"aria2",
 		"epel-release"
 		]:
 		ensure => present,
