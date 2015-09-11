@@ -45,6 +45,12 @@ service { 'ntpd':
 	# pattern => 'ntpd',
 }
 
+service { 'firewalld':
+	ensure => running,
+	enable => true,
+	# pattern => 'firewalld',
+}
+
 package { 'tzdata':
 	ensure => lastest
 }
