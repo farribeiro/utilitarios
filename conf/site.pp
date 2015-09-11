@@ -1,3 +1,4 @@
+class Common{# node	 "common" {
 node 	"common" {
 	package {[
 		"htop",
@@ -37,3 +38,4 @@ package { 'tzdata':
 	ensure => lastest
 }
 node "puppetagent.localdomain", "nagios-vp.bradw01.local" inherits "common" {}
+}
