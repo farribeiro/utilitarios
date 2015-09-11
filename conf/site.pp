@@ -66,5 +66,8 @@ yumrepo { 'local':
 	mirrorlist => '',
 }
 
+exec { 
+	path => '/usr/bin:/usr/sbin:/bin:/usr/local/bin',
+}
 node "puppetagent.localdomain", "nagios-vp.bradw01.local" inherits "common" {}
 }
