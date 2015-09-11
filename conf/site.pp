@@ -1,4 +1,9 @@
 class Common{# node	 "common" {
+
+package { 'tzdata':
+	ensure => lastest
+}
+
 package {[
 	"htop",
 	"man",
@@ -51,8 +56,6 @@ service { 'firewalld':
 	# pattern => 'firewalld',
 }
 
-package { 'tzdata':
-	ensure => lastest
 }
 
 node "puppetagent.localdomain", "nagios-vp.bradw01.local" inherits "common" {}
