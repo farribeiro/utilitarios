@@ -27,5 +27,11 @@ node 	"common" {
 	}
 }
 
+service { 'ntp':
+	ensure => running,
+	enable => true,
+	require => Package['ntp']
+	# pattern => 'ntp',
+}
 node	"puppetagent.localdomain",
 	"nagios-vp.bradw01.local" inherits "common" {}
