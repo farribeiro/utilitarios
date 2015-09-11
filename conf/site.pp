@@ -29,11 +29,11 @@ package {[
 	ensure => present,
 }
 
-service { 'ntp':
+service { 'ntpd':
 	ensure => running,
 	enable => true,
 	require => Package['ntp']
-	# pattern => 'ntp',
+	# pattern => 'ntpd',
 }
 
 package { 'tzdata':
