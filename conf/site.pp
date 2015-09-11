@@ -33,8 +33,7 @@ service { 'ntp':
 	require => Package['ntp']
 	# pattern => 'ntp',
 }
-node	"puppetagent.localdomain",
-	"nagios-vp.bradw01.local" inherits "common" {}
 package { 'tzdata':
 	ensure => lastest
 }
+node "puppetagent.localdomain", "nagios-vp.bradw01.local" inherits "common" {}
