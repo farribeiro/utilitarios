@@ -24,6 +24,15 @@ package {[
 	"epel-release",
 	"net-tools"
 	'iptraf',
+	'bzip2',
+	'unzip',
+	'traceroute',
+	'tcpdump',
+	'ccze',
+	'less',
+	"most",
+	'dnsutils',
+	'nmap',
 	]:
 	#ensure => installed,
 	ensure => present,
