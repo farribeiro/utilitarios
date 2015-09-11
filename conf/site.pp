@@ -1,31 +1,32 @@
 class Common{# node	 "common" {
-node 	"common" {
-	package {[
-		"htop",
-		"man",
-		"tmux",
-		"heartbeat",
-		"sudo",
-		"puppet",
-		"ntp",
-		"ntpdate",
-		"nss-pam-ldapd",
-		"krb5-workstation",
-		"pam_krb5",
-		"nscd",
-		"openldap-clients",
-		"mutt",
-		"net-snmp",
-		"rsync",
-		"at",
-		"git"
-		"tig",
-		"openvm-tools-nox11",
-		"aria2",
-		"epel-release"
-		]:
-		ensure => present,
-	}
+package {[
+	"htop",
+	"man",
+	"tmux",
+	"heartbeat",
+	"sudo",
+	"puppet",
+	"ntp",
+	"ntpdate",
+	"nss-pam-ldapd",
+	"krb5-workstation",
+	"pam_krb5",
+	"nscd",
+	"openldap-clients",
+	"mutt",
+	"net-snmp",
+	"rsync",
+	"at",
+	"git"
+	"tig",
+	"openvm-tools-nox11",
+	"aria2",
+	"epel-release",
+	"net-tools"
+	'iptraf',
+	]:
+	#ensure => installed,
+	ensure => present,
 }
 
 service { 'ntp':
@@ -34,8 +35,10 @@ service { 'ntp':
 	require => Package['ntp']
 	# pattern => 'ntp',
 }
+
 package { 'tzdata':
 	ensure => lastest
 }
+
 node "puppetagent.localdomain", "nagios-vp.bradw01.local" inherits "common" {}
 }
