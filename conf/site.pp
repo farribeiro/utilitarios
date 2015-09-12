@@ -1,5 +1,4 @@
 class mymodule {
-class Common{# node	 "common" {
 
 package { 'tzdata':
 	ensure => lastest
