@@ -62,15 +62,15 @@ service { 'firewalld':
 	# pattern => 'firewalld',
 }
 
-yumrepo { 'local':
-	ensure => present,
-	baseurl => 'http://192.168.1.2/',
-	descr => 'The local repository',
-	enabled => '1',
-	gpgcheck => '1',
+#yumrepo { 'local':
+	#ensure => present,
+	#baseurl => 'http://192.168.1.2/',
+	#descr => 'The local repository',
+	#enabled => '1',
+	#gpgcheck => '1',
 #	gpgkey => 'file:///etc/pki/rpm-gpg/RPM-GPG-KEY-local',
-	mirrorlist => '',
-}
+	#mirrorlist => '',
+#}
 
 exec { 
 	path => '/usr/bin:/usr/sbin:/bin:/usr/local/bin',
