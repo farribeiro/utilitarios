@@ -41,6 +41,14 @@ package {[
 	ensure => present,
 }
 
+package { [
+	'aria2',
+	'tig',
+	'htop',
+	]:
+	ensure    => installed,
+	require   => Package['epel-release']
+}
 service { 'ntpd':
 	ensure => running,
 	enable => true,
