@@ -74,3 +74,12 @@ service { 'firewalld':
 Exec {
 	path => '/usr/bin:/usr/sbin:/bin:/usr/local/bin',
 }
+
+file{ '/etc/ntp/ntp.conf':
+	ensure	=> file,
+	owner	=> 'root',
+	group	=> 'root',
+	mode	=> '0644',
+	source	=> 'puppet:///modules/mymodule/ntp.conf',
+	notify	=> Service['ntpd'],
+}
