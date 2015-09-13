@@ -48,6 +48,7 @@ package { [
 	ensure    => installed,
 	require   => Package['epel-release']
 }
+
 service { 'ntpd':
 	ensure => running,
 	enable => true,
