@@ -83,3 +83,5 @@ file{ '/etc/ntp/ntp.conf':
 	source	=> 'puppet:///modules/mymodule/ntp.conf',
 	notify	=> Service['ntpd'],
 }
+
+}
