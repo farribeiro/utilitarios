@@ -71,7 +71,6 @@ service { 'firewalld':
 	#mirrorlist => '',
 #}
 
-#exec {
-	#path => '/usr/bin:/usr/sbin:/bin:/usr/local/bin',
-#}
+Exec {
+	path => '/usr/bin:/usr/sbin:/bin:/usr/local/bin',
 }
