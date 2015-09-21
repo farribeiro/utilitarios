@@ -190,8 +190,6 @@ alias rm='rm -iv'
 alias cp="cp -a"
 #alias mv='mv -v'
 #alias mkdir='mkdir -pv'
-#alias pacman="sudo pacman-color"
-#alias ypacman='yaourt'
 #alias mem_clear='sudo mem_clear'
 #alias proz='proz -r'
 #alias vboxstart='sudo modprobe vboxdrv && sudo modprobe vboxnetflt'
@@ -212,9 +210,11 @@ alias swap2ram="sudo swapoff -a; swapon -a; sysctl -w vm.drop_caches=3"
 alias convert="convert -monitor -verbose"
 alias compjpg="mogrify -monitor -verbose -resize 1024x768 *"
 alias mozjpeg="/opt/libmozjpeg/bin/jpegtran"
-alias yoremove="yaourt -Rcsn"
+alias yopurge="yaourt -Rcsn"
 alias yoinstall="yaourt -S"
 alias youpgrade="yaourt -Suy"
+alias epc="java -jar /opt/epubchecker/epubchecker -m opf -m xhtml -v 3.0"
+alias zpub="zip -0 $1 mimetype; zip -9 $1 META-INF OEBPS
 
 # Esses alias permitem abrir um arquivo diretamente (ex, % file.txt e o vim já é aberto).
 alias -s html=$BROWSER
