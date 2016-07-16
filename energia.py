@@ -33,6 +33,9 @@ class energia:
 	def kwh4mes(self):
 		return self.__KWh * self.__horas4dia * self.__dias
 	def __init__(self):
+		# amp  = raw_input("Amperes: ")
+		# volts = raw_input("Voltagem: ")
+		# ptnc = self.potencia(amp,volts)
 		ptnc = raw_input("Digite a Potencia(W): ")
 		KW = float(ptnc) / 1000;
 
