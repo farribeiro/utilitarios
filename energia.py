@@ -47,10 +47,10 @@ class energia:
 		# amp  = raw_input("Amperes: ")
 		# volts = raw_input("Voltagem: ")
 		# ptnc = self.potencia(amp,volts)
-		ptnc = raw_input("Digite a Potencia(W): ")
 		KW = float(ptnc) / 1000;
+		ptnc = float(raw_input("Potencia(W): "))
+		self.__preco = float(raw_input ("Preço(KWh): "))
 
-		preco = raw_input ("Digite o preço(KW): ")
 		self.estimativas()
 
 		horas4dia = float(raw_input("Quantas horas por dias usa o equipamento: "))
