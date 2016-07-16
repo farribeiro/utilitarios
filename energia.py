@@ -15,6 +15,23 @@
 import os
 
 class energia:
+	def potencia(self,amp,volts):
+		return amp * volts
+
+	def potencia4kwh(self,ptnc):
+		return ptnc / 1000
+
+	def custo4hora(self):
+		return self.__KWh * self.__preco
+
+	def custo4dia(self):
+		return self.custo4hora() * self.__horas4dia
+
+	def custo4mes(self):
+		return self.custo4dia() * self.__dias
+
+	def kwh4mes(self):
+		return self.__KWh * self.__horas4dia * self.__dias
 	def __init__(self):
 		ptnc = raw_input("Digite a Potencia(W): ")
 		KW = float(ptnc) / 1000;
