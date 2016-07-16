@@ -14,7 +14,7 @@
 
 import os
 
-class gastoenergia:
+class energia:
 	def __init__(self):
 		ptnc = raw_input("Digite a Potencia(W): ")
 		KW = float(ptnc) / 1000;
