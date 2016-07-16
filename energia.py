@@ -47,13 +47,17 @@ class energia:
 		# amp  = raw_input("Amperes: ")
 		# volts = raw_input("Voltagem: ")
 		# ptnc = self.potencia(amp,volts)
+
+
 		ptnc = float(raw_input("Potencia(W): "))
 		self.__KWh = self.potencia4kwh(ptnc)
+
 		self.__preco = float(raw_input ("Preço(KWh): "))
 
 		self.estimativas()
 
 		print("\n*******************************\n")
+
 		horas4dia = float(raw_input("Quantas horas por dias usa o equipamento: "))
 		dias = float(raw_input("Quantos dias usa o equipamento: "))
 
