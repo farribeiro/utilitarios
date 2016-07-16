@@ -47,4 +47,4 @@ class energia:
 
 		print "\nO gasto é de R$ %.2f" % preco_final
 
-g = gastoenergia();
+g = energia();
