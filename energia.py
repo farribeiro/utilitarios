@@ -47,8 +47,8 @@ class energia:
 		# amp  = raw_input("Amperes: ")
 		# volts = raw_input("Voltagem: ")
 		# ptnc = self.potencia(amp,volts)
-		KW = float(ptnc) / 1000;
 		ptnc = float(raw_input("Potencia(W): "))
+		self.__KWh = self.potencia4kwh(ptnc)
 		self.__preco = float(raw_input ("Preço(KWh): "))
 
 		self.estimativas()
