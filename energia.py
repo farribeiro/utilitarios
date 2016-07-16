@@ -53,10 +53,11 @@ class energia:
 
 		self.estimativas()
 
+		print("\n*******************************\n")
 		horas4dia = float(raw_input("Quantas horas por dias usa o equipamento: "))
 		dias = float(raw_input("Quantos dias usa o equipamento: "))
 
 		preco_final = self.custo4hora() * horas4dia * dias
-		print "\nO gasto é de R$ %.2f" % preco_final
+		print "\nCusto de R$ %.2f" % preco_final
 
 g = energia();
