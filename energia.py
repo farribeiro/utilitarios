@@ -35,6 +35,14 @@ class energia:
 
 	def kwh4mes(self):
 		return self.__KWh * self.__horas4dia * self.__dias
+
+	def estimativas(self):
+		print("\n**********ESTIMATIVAS**********")
+		print "\n%.2f kWh x %.2f = R$ %.2f/hora" % (self.__KWh, self.__preco, self.custo4hora())
+		print "\nCusto de %.2f/dia" % self.custo4dia()
+		print "Custo de R$ %.2f/mês (24x7)" % self.custo4mes()
+		print "\n%.2f x %.2f x %.2f = %.2f kWh/mês" % (self.__KWh, self.__horas4dia, self.__dias, self.kwh4mes())
+
 	def __init__(self):
 		# amp  = raw_input("Amperes: ")
 		# volts = raw_input("Voltagem: ")
@@ -43,6 +51,7 @@ class energia:
 		KW = float(ptnc) / 1000;
 
 		preco = raw_input ("Digite o preço(KW): ")
+		self.estimativas()
 
 		horas4dia = float(raw_input("Quantas horas por dias usa o equipamento: "))
 		dias = float(raw_input("Quantos dias usa o equipamento: "))
