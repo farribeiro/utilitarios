@@ -43,11 +43,11 @@ class energia:
 		KW = float(ptnc) / 1000;
 
 		preco = raw_input ("Digite o preço(KW): ")
-		horas4dia = raw_input("Quantas horas por dias usa o equipamento: ")
-		dias = raw_input("Quantos dias usa o equipamento: ")
 
-		preco_final = ((KW * float(preco) * float(horas4dia)) * float(dias))
+		horas4dia = float(raw_input("Quantas horas por dias usa o equipamento: "))
+		dias = float(raw_input("Quantos dias usa o equipamento: "))
 
+		preco_final = self.custo4hora() * horas4dia * dias
 		print "\nO gasto é de R$ %.2f" % preco_final
 
 g = energia();
