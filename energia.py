@@ -15,6 +15,9 @@
 import os
 
 class energia:
+	__horas4dia = 24.0
+	__dias = 30.0
+
 	def potencia(self,amp,volts):
 		return amp * volts
 
