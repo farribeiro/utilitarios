@@ -23,21 +23,21 @@ resize(){
 
 resize_web(){
 	nkdir www
-	 shopt -s nocasematch
-	 for i in (*.jpg||*.jpeg||*.png); do
-	 	convert -depth 72 $i "www/$i";
-	 done
+	shopt -s nocasematch
+	for i in (*.jpg||*.jpeg||*.png); do
+		convert -depth 72 $i "www/$i";
+	done
 }
 
 grava(){
-	echo "Coloque o CD que quer copiar
-"	eject
+	echo "Coloque o CD que quer copiar"
+	eject
 	read a
 	echo "Fazendo a imagem ..."
 	dd if=/dev/cdrom of=/tmp/cdrom.iso
-	echo "Imagem pronta, Ejetando ... "
+	echo "Imagem pronta, Ejetando ..."
 	eject
-	echo "Coloque um CD limpo ... "
+	echo "Coloque um CD limpo ..."
 	read a
 	cdrecord -v dev=/dev/cdrom -speed=4 -data /tmp/cdrom.iso
 	echo "Removendo a imagem, Ejetando ..."
