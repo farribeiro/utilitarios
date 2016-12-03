@@ -7,8 +7,8 @@
 # in any medium without royalty provided the copyright notice and this notice are 
 # preserved.  This file is offered as-is, without any warranty.
 
-# Este script faz a conversão de qualquer formato para DIVX da MS
-# que é comum em players de mesa e automotivo
+# Este script faz a conversão de qualquer formato para DIVX da MSque é comum em players
+# de mesa e automotivo, usando container AVI
 
 import os
 import sys

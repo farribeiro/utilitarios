@@ -1,4 +1,12 @@
 #!/bin/sh
+# (c) Fábio Rodrigues Ribeiro - http://farribeiro.blogspot.com
+
+# Copying and distribution of this file, with or without modification, are permitted
+# in any medium without royalty provided the copyright notice and this notice are
+# preserved.  This file is offered as-is, without any warranty.
+
+# Script feito para analizar o status de toner para a impressora XEROX WORKCENTRE, usando
+# SNMP para envio via email de acordo com tarefa cron.
 
 export limpo="/tmp/limpo.html"
 export bruto="/tmp/bruto.html"

@@ -1,7 +1,13 @@
 #!/bin/sh
 
-# Este script é muito semelhante aos services dos derivados do DEBIANs
-# É necessário ativar com atencedencia o tuncfg
+# (c) Fábio Rodrigues Ribeiro - http://farribeiro.blogspot.com
+
+# Copying and distribution of this file, with or without modification, are permitted
+# in any medium without royalty provided the copyright notice and this notice are
+# preserved.  This file is offered as-is, without any warranty.
+
+# Este script é muito semelhante aos services dos derivados do DEBIANs. É necessário ativar
+# com atencedencia o tuncfg
 
 export hvpn_network=""
 export hvpn_password=""
