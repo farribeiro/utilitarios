@@ -1,6 +1,7 @@
 set nocompatible
 
 syntax on "Coloração do texto para salvar arquivo
+set textwidth=80 "Comprimento da linha
 set background=dark "Cores para fundo preto
 set fenc=utf8 "Define enconding do arquivo
 set enc=utf8 "Define encoding do texto
