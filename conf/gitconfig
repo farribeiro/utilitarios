@@ -9,12 +9,12 @@
 [user]
 	name = Fabio Rodrigues Ribeiro
 	email = farribeiro@gmail.com
-[color]
-	ui = always
-	branch = always
-	status = always
-	merge = always
-	diff = always
+#[color]
+#	ui = always
+#	branch = always
+#	status = always
+#	merge = always
+#	diff = always
 
 [github]
 	token = 
