@@ -213,8 +213,8 @@ alias mozjpeg="/opt/libmozjpeg/bin/jpegtran"
 alias yopurge="yaourt -Rcsn"
 alias yoinstall="yaourt -S"
 alias youpgrade="yaourt -Suy"
-alias epc="java -jar /opt/epubcheck/epubcheck.jar -m opf -m xhtml -v 3.0"
-alias zpub="zip -0 $1 mimetype && zip -9 -r $1 META-INF OEBPS"
+#alias epc="java -jar /opt/epubcheck/epubcheck.jar -m opf -m xhtml -v 3.0"
+#alias zpub="zip -0 $1 mimetype && zip -9 -r $1 META-INF OEBPS"
 
 # Esses alias permitem abrir um arquivo diretamente (ex, % file.txt e o vim já é aberto).
 alias -s html=$BROWSER
