@@ -17,6 +17,7 @@
 	% ulem,
 	indentfirst,
 	graphicx,
+	cmap,
 	}
 
 \usepackage[
