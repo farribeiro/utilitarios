@@ -9,6 +9,7 @@
 [user]
 	name = Fabio Rodrigues Ribeiro
 	email = farribeiro@gmail.com
+
 #[color]
 #	ui = always
 #	branch = always
@@ -19,3 +20,7 @@
 [github]
 	token = 
 	user = 
+
+[diff "pandoc"]
+	textconv = pandoc --to=plain
+	cachetextconv = true
