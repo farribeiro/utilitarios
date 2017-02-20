@@ -55,6 +55,10 @@
 %\setlength{\parskip}
 %\setlength{\parident}
 
+% Times new Roman
+% \usepackage{fontspec}
+% \setmainfont{Times New Roman}
+
 %\usepackage{fancyhdr}
 %\pagestyle{fancy}
 %\fancyhf{}
