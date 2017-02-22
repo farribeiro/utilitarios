@@ -1,5 +1,15 @@
 #!/bin/sh
 
+# Conversor e backupeador de fotos
+# =================================
+#
+
+# (c) Fábio Rodrigues Ribeiro - http://farribeiro.blogspot.com
+
+# Copying and distribution of this file, with or without modification, are permitted
+# in any medium without royalty provided the copyright notice and this notice are
+# preserved.  This file is offered as-is, without any warranty.
+
 mkdir 800x600
 
 log(){
@@ -60,6 +70,6 @@ case $1 in
 
 	"-h" | "-?" | *)
 		echo "sintaxe: [-b|-p"
-		exit 0 
+		exit 0
 	;;
 esac
