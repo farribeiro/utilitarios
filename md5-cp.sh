@@ -1,4 +1,10 @@
 #!/bin/sh
 
-rsync -av $1 $2   #cópia simples
-rsync -cavn $1 $2 #checa checksun
+export ORIGIN=$1
+export DESTINATION=$2
+
+#cópia simples
+rsync -av ${ORIGIN} ${DESTINATION}
+
+#checa checksun
+rsync -cavn ${ORIGIN} ${DESTINATION}
