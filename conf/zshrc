@@ -4,21 +4,21 @@
 #Melhorado por: Fábio Rodrigues Ribeiro
 #########################
 
-#export MANPATH="/usr/man:/usr/X11R6/man"
-#export LESSCHARSET="latin1"
+# export MANPATH="/usr/man:/usr/X11R6/man"
+# export LESSCHARSET="latin1"
 export INPUTRC="/etc/inputrc"
-#export LESS="-R"
-#export JRUBY_HOME=/home/fabio/jruby
-#export JRUBY_CP=$JRUBY_HOME/lib
-#export RAILS_ENV="development"
-#export CLASSPATH=. #:$JRUBY_CP
-#export SCALA_HOME=/home/fabio/scala
-#export MAVEN_HOME=/home/fabio/apache-maven-3.0.3
-#export M2=$MAVEN_HOME/bin
-#export PATH=$PATH:$JAVA_HOME:$JAVA_HOME/bin:$CLASSPATH:$M2:$GEM_PATH/bin:$JRUBY_HOME:$JRUBY_HOME/bin:$HOME/Documentos/dev/utilitarios
-#export GEM_HOME=$HOME/.gems/1.8
-#export GEM_PATH=$GEM_HOME
-#export PATH=$PATH:$GEM_PATH/bin
+# export LESS="-R"
+# export JRUBY_HOME=/home/fabio/jruby
+# export JRUBY_CP=$JRUBY_HOME/lib
+# export RAILS_ENV="development"
+# export CLASSPATH=. #:$JRUBY_CP
+# export SCALA_HOME=/home/fabio/scala
+# export MAVEN_HOME=/home/fabio/apache-maven-3.0.3
+# export M2=$MAVEN_HOME/bin
+# export PATH=$PATH:$JAVA_HOME:$JAVA_HOME/bin:$CLASSPATH:$M2:$GEM_PATH/bin:$JRUBY_HOME:$JRUBY_HOME/bin:$HOME/Documentos/dev/utilitarios
+# export GEM_HOME=$HOME/.gems/1.8
+# export GEM_PATH=$GEM_HOME
+# export PATH=$PATH:$GEM_PATH/bin
 
 # Salvar 50*10^3 eventos no histórico.
 HISTFILE=${HOME}/.zsh_history
@@ -30,7 +30,7 @@ unset mailpath MAILCHECK
 
 # Configuracoes do Locale (encontre seu locale com 'locale -a' [sem as aspas])
 export LANG="pt_BR.utf8"
-#export LANGUAGE="pt_BR.utf8"
+# export LANGUAGE="pt_BR.utf8"
 export LC_COLLATE="C"
 umask 022
 
@@ -136,8 +136,8 @@ zstyle ':vcs_info:*' enable git svn
 # [/dir] user@host %      HH:MM
 # PS1 and PS2
 precmd(){vcs_info;export PS1="${vcs_info_msg_0_}[%B%n%b@%m %3~]\$ "}
-#precmd(){vcs_info;export RPS1="${vcs_info_msg_0_}"}
-#export RPS1="%T"
+# precmd(){vcs_info;export RPS1="${vcs_info_msg_0_}"}
+# export RPS1="%T"
 export PS2="$(print '%{\e[0;34m%}>%{\e[0m%}')"
 
 # Ajusta principais aplicativos.
@@ -176,30 +176,30 @@ zmodload -i zsh/mathfunc
 zmodload -i zsh/complist
 
 # Aliases
-#alias smbrefresh="sudo \"service smbd restart;service nmbd restart\""
+# alias smbrefresh="sudo \"service smbd restart;service nmbd restart\""
 alias netfor="sudo sysctl -w net.ipv4.ip_forward=1; sudo iptables -t nat -A POSTROUTING -o $1 -j MASQUERADE"
 alias gingadd="echo \"$1\" >> .gitignore"
 alias hsize="df -h | grep /home"
-#alias svns="svnserve -d -r /home/fabio/auxiliar.svn"
+# alias svns="svnserve -d -r /home/fabio/auxiliar.svn"
 alias ls="ls -lahF --group-directories-first --color=always"
 alias lsfor="\ls -1"
 alias dorp="deborphan | sudo xargs apt-get purge -y"
 alias fedorp="sudo \"package-cleanup --leaves -q | xargs yum remove -y;package-cleanup --orphans -q | xargs yum remove -y\""
-#alias gcc='gcc -Wall'
+# alias gcc='gcc -Wall'
 alias rm='rm -iv'
 alias cp="cp -a"
-#alias mv='mv -v'
-#alias mkdir='mkdir -pv'
-#alias mem_clear='sudo mem_clear'
-#alias proz='proz -r'
-#alias vboxstart='sudo modprobe vboxdrv && sudo modprobe vboxnetflt'
-#alias vboxstop='sudo modprobe -r vboxdrv && sudo modprobe -r vboxnetflt'
-#alias vi="vim"
-#alias net_restart='sudo /etc/rc.d/network restart'
-#alias db.lck_rm='sudo rm -rf /var/lib/pacman/db.lck'
-#alias svim="sudo vim"
-#alias apt-update="update-manager"
-#alias apt-dist="update-manager -c"
+# alias mv='mv -v'
+# alias mkdir='mkdir -pv'
+# alias mem_clear='sudo mem_clear'
+# alias proz='proz -r'
+# alias vboxstart='sudo modprobe vboxdrv && sudo modprobe vboxnetflt'
+# alias vboxstop='sudo modprobe -r vboxdrv && sudo modprobe -r vboxnetflt'
+# alias vi="vim"
+# alias net_restart='sudo /etc/rc.d/network restart'
+# alias db.lck_rm='sudo rm -rf /var/lib/pacman/db.lck'
+# alias svim="sudo vim"
+# alias apt-update="update-manager"
+# alias apt-dist="update-manager -c"
 alias ff="~/firefox/firefox"
 alias tb="~/thunderbird/thunderbird"
 alias sed="sed -r"
@@ -212,15 +212,15 @@ alias mozjpeg="/opt/libmozjpeg/bin/jpegtran"
 alias yopurge="yaourt -Rcsn"
 alias yoinstall="yaourt -S"
 alias youpgrade="yaourt -Suy"
-#alias epc="java -jar /opt/epubcheck/epubcheck.jar -m opf -m xhtml -v 3.0"
-#alias zpub="zip -0 $1 mimetype && zip -9 -r $1 META-INF OEBPS"
+# alias epc="java -jar /opt/epubcheck/epubcheck.jar -m opf -m xhtml -v 3.0"
+# alias zpub="zip -0 $1 mimetype && zip -9 -r $1 META-INF OEBPS"
 
 # Esses alias permitem abrir um arquivo diretamente (ex, % file.txt e o vim já é aberto).
 alias -s html=$BROWSER
 alias -s css=$EDITOR
-#alias -s org=$BROWSER
+# alias -s org=$BROWSER
 alias -s php=$BROWSER
-#alias -s com=$BROWSER
+# alias -s com=$BROWSER
 alias -s net=$BROWSER
 alias -s br=$BROWSER
 alias -s jpg=$VIEWER
@@ -231,8 +231,8 @@ alias -s txt=$EDITOR
 alias -s doc=soffice
 alias -s odt=soffice
 alias -s pdf=evince
-#alias -s gz="tar zxvf"
-#alias -s bz2="tar jxvf"
+# alias -s gz="tar zxvf"
+# alias -s bz2="tar jxvf"
 
 # Carrega módulo de matemática
 load_math() {zmodload zsh/mathfunc}
@@ -277,13 +277,13 @@ bindkey '^i' expand-or-complete-prefix
 
 # funcoeszz
 # source /home/phillipe/.zzrc
-#export ZZPATH='/usr/bin/funcoeszz'
+# export ZZPATH='/usr/bin/funcoeszz'
 
 ############################
 ## Functions
 #############################
 #
-#shot - takes a screenshot of your current window
+# shot - takes a screenshot of your current window
 shot ()
 {
 import -w root -quality 75 "$HOME/shot-$(date +%s).png"
