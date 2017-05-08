@@ -28,18 +28,18 @@ export DOCS="$DIRBASE/textos html htm shtml odt ppt xml xls mysql csv chm chm do
 ####
 
 function findopts_iname {
-  echo "$*" | awk '{
-    dir=$1
-    $1=""
-    split($0,pattern)
-    for (i in pattern) {
-      args=args " -iname \"*."pattern[i]"\" -o "
-    }
-    gsub(/ -o $/,"",args)
-    comando="find -maxdepth 1 -mtime +3 \\(" args " \\) -exec mv --backup=numbered --verbose {} \""dir"\" \\;"
-    print "\n\n\n====\n"comando" --- "dir"\n====\n"
-    system( comando )
-  }'
+	echo "$*" | awk '{
+		dir=$1
+		$1=""
+		split($0,pattern)
+		for (i in pattern) {
+			args=args " -iname \"*."pattern[i]"\" -o "
+		}
+		gsub(/ -o $/,"",args)
+		comando="find -maxdepth 1 -mtime +3 \\(" args " \\) -exec mv --backup=numbered --verbose {} \""dir"\" \\;"
+		print "\n\n\n====\n"comando" --- "dir"\n====\n"
+		system( comando )
+	}'
 }
 
 cd "$DIRBASE"
