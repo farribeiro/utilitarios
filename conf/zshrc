@@ -199,7 +199,6 @@ alias cp="cp -a"
 #alias db.lck_rm='sudo rm -rf /var/lib/pacman/db.lck'
 #alias svim="sudo vim"
 #alias apt-update="update-manager"
-#alias ls="ls -la"
 #alias apt-dist="update-manager -c"
 alias ff="~/firefox/firefox"
 alias tb="~/thunderbird/thunderbird"
