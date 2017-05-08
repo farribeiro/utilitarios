@@ -1,5 +1,5 @@
 #########################
-#-*- coding: utf-8 -*-            
+#-*- coding: utf-8 -*-
 #Criado por: Phillipe Smith
 #Melhorado por: Fábio Rodrigues Ribeiro
 #########################
@@ -204,7 +204,7 @@ alias cp="cp -a"
 alias ff="~/firefox/firefox"
 alias tb="~/thunderbird/thunderbird"
 alias sed="sed -r"
-alias homeloc="locate $HOME | egrep $1" 
+alias homeloc="locate $HOME | egrep $1"
 alias pyserver="python -m SimpleHTTPServer"
 alias swap2ram="sudo swapoff -a; swapon -a; sysctl -w vm.drop_caches=3"
 alias convert="convert -monitor -verbose"
@@ -237,7 +237,7 @@ alias -s pdf=evince
 
 # Carrega módulo de matemática
 load_math() {zmodload zsh/mathfunc}
-      
+
 # Man pages coloridas:
 if [ -e $(`which most > /dev/null`) ]; then
 	export PAGER='most -s'
@@ -245,7 +245,7 @@ if [ -e $(`which most > /dev/null`) ]; then
 else
 	export PAGER=less
 fi
-	  
+
 # key bindings
 bindkey "\e[1~" beginning-of-line
 bindkey "\e[4~" end-of-line
@@ -279,7 +279,7 @@ bindkey '^i' expand-or-complete-prefix
 # funcoeszz
 # source /home/phillipe/.zzrc
 #export ZZPATH='/usr/bin/funcoeszz'
-		  
+
 ############################
 ## Functions
 #############################
@@ -293,7 +293,7 @@ import -w root -quality 75 "$HOME/shot-$(date +%s).png"
 
 dcomp (){
 for i in `\ls -1`; do
-	jpegoptim -o -m80 --strip-all "$1"; 
+	jpegoptim -o -m80 --strip-all "$1";
 done
 }
 
