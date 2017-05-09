@@ -1,7 +1,8 @@
 
 #!/bin/bash
 
-# Este script varre o servidor de arquivos em busca de arquivos executáveis e autorun na raiz do compartilhamento
+# Este script varre o servidor de arquivos em busca de arquivos executáveis e
+# autorun na raiz do compartilhamento
 
 $files = "*.cmd *.exe *.pif *.bat autorun.inf recycler recycler32"
 
@@ -17,7 +18,8 @@ log(){
 	#   Diego Godoi     #
 	#####################
 
-	# Diretorios logdir e logdel devem ser modificados conforme a sua necessidade
+	# Diretorios logdir e logdel devem ser modificados conforme a sua
+	# necessidade
 
 	logdir="/var/log"
 	logdel="/var/log/log-del"
