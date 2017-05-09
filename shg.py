@@ -4,7 +4,7 @@
 # (c) Fábio Rodrigues Ribeiro - http://farribeiro.blogspot.com
 
 # Copying and distribution of this file, with or without modification, are permitted
-# in any medium without royalty provided the copyright notice and this notice are 
+# in any medium without royalty provided the copyright notice and this notice are
 # preserved.  This file is offered as-is, without any warranty.
 
 # Este script tem objetivo de simplificar os comandos do SSH
@@ -20,35 +20,35 @@ class shpy:
 #	host = None
 #	alvo = None
 #	gateway = None
-	
+
 	porta_localhost = "5000"
 	default_cmd = "sudo ssh -fCN"
-	
+
 	def dynamic_bridge(self, host):
 		os.system(self.default_cmd+"D " + self.porta_localhost + " " + host)
 		print "Configure seu navegador para usar sockets no endereço 127.0.0.1:" +self.porta_localhost
-		
+
 	def forward(self, gateway, alvo):
 #		alvo = sys.argv[4] #sintaxe 0.0.0.0:0000
 		os.system(self.default_cmd+"L "+ self.porta_localhost +":"+ alvo + " " + gateway)
 		print "Apontar aplicativo para 127.0.0.1:"+self.porta_localhost
-		
+
 #	def reverse(self, host):
 #		os.system(self.default_cmd+"R "+host)
-		
+
 	def kill(self):
 		os.system("sudo killall ssh")
 		print "Matando processo... ok"
-		
+
 	def rsync_cp(self, caminho_host, caminho):
 		os.system("sudo rsync -avz "+ caminho +" -e ssh://"+caminho_host) # rsync -avz /home -e ssh://user@0.0.0.0:/path
-		
+
 	def argumentos(self):
 		print "Faltando argumentos"
-		
+
 	def __init__(self):
 		opcao = sys.argv[1]
-			
+
 		if(opcao == "dbg"):
 #			if (sys.argv[1] or sys.argv[2] == None):
 #				self.argumentos()
