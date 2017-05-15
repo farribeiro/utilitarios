@@ -53,4 +53,4 @@ au BufNewFile,BufRead *.t2t set ft=txt2tags
 map <F9> <ESC>:%s/[.!?]\_s\+\a/\U&\E/gc<CR>
 
 "Limpa espaço em branco no fim da linha
-map <F8> <ESC>:%s/ \+$//gc
+map <F8> <ESC>:%s/ \+$//gc<CR>
