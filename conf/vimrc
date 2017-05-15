@@ -37,7 +37,7 @@ set spelllang=pt "Dicionário em Português
 map <F3> <ESC>:set spell<CR>
 
 "Atalho para salvar arquivo
-map <F2> <ESC>:w<CR> 
+map <F2> <ESC>:w<CR>
 
 "Chama .vimrc
 map <F12> <ESC>:e ~/.vimrc<CR>
