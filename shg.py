@@ -17,9 +17,9 @@ import os
 import sys
 
 class shpy:
-#	host = None
-#	alvo = None
-#	gateway = None
+	# host = None
+	# alvo = None
+	# gateway = None
 
 	porta_localhost = "5000"
 	default_cmd = "sudo ssh -fCN"
@@ -29,12 +29,12 @@ class shpy:
 		print "Configure seu navegador para usar sockets no endereço 127.0.0.1:" +self.porta_localhost
 
 	def forward(self, gateway, alvo):
-#		alvo = sys.argv[4] #sintaxe 0.0.0.0:0000
+		# alvo = sys.argv[4] # sintaxe 0.0.0.0:0000
 		os.system(self.default_cmd+"L "+ self.porta_localhost +":"+ alvo + " " + gateway)
 		print "Apontar aplicativo para 127.0.0.1:"+self.porta_localhost
 
-#	def reverse(self, host):
-#		os.system(self.default_cmd+"R "+host)
+	# def reverse(self, host):
+		# os.system(self.default_cmd+"R "+host)
 
 	def kill(self):
 		os.system("sudo killall ssh")
@@ -50,16 +50,16 @@ class shpy:
 		opcao = sys.argv[1]
 
 		if(opcao == "dbg"):
-#			if (sys.argv[1] or sys.argv[2] == None):
-#				self.argumentos()
-#			else:
+			# if (sys.argv[1] or sys.argv[2] == None):
+				# self.argumentos()
+			# else:
 			self.dynamic_bridge(sys.argv[2])
 		elif(opcao == "frw"):
 			self.forward(sys.argv[2], sys.argv[3])
 		elif(opcao == "sh"):
 			os.system("sudo ssh -C "+sys.argv[2])
-#		elif(opcao == "rev"):
-#			self.reverse(sys.argv[2])
+		# elif(opcao == "rev"):
+			# self.reverse(sys.argv[2])
 		elif (opcao == "kill"):
 			self.kill()
 		elif (opcao == "cp"):
