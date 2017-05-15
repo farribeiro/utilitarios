@@ -45,9 +45,6 @@ map <F12> <ESC>:e ~/.vimrc<CR>
 "Recarrega .vimrc
 map <F5> <ESC>:source ~/.vimrc<CR>
 
-"Ativa syntax txt2tags
-au BufNewFile,BufRead *.t2t set ft=txt2tags 
-
 "Regex
 "Primeira letra maiúscula
 map <F9> <ESC>:%s/[.!?]\_s\+\a/\U&\E/gc<CR>
