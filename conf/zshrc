@@ -182,43 +182,43 @@ zmodload -i zsh/mathfunc
 zmodload -i zsh/complist
 
 # Aliases
-alias apt-dist="update-manager -c"
-alias apt-update="update-manager"
-alias compjpg="mogrify -monitor -verbose -resize 1024x768 *"
+# alias apt-dist="update-manager -c"
+# alias apt-update="update-manager"
+# alias compjpg="mogrify -monitor -verbose -resize 1024x768 *"
 alias convert="convert -monitor -verbose"
 alias cp="cp -a"
-alias db.lck_rm='sudo rm -rf /var/lib/pacman/db.lck'
-alias dorp="deborphan | sudo xargs apt-get purge -y"
+# alias db.lck_rm='sudo rm -rf /var/lib/pacman/db.lck'
+# alias dorp="deborphan | sudo xargs apt-get purge -y"
 alias epc="java -jar /opt/epubcheck/epubcheck.jar -m opf -m xhtml -v 3.0"
-alias fedorp="sudo \"package-cleanup --leaves -q | xargs yum remove -y;package-cleanup --orphans -q | xargs yum remove -y\""
-alias ff="~/firefox/firefox"
-alias gcc='gcc -Wall'
+# alias fedorp="sudo \"package-cleanup --leaves -q | xargs yum remove -y;package-cleanup --orphans -q | xargs yum remove -y\""
+# alias ff="~/firefox/firefox"
+# alias gcc='gcc -Wall'
 alias gingadd="echo \"$1\" >> .gitignore"
 alias homeloc="locate $HOME | egrep $1"
 alias hsize="df -h | grep /home"
 alias ls="ls -lahtF --group-directories-first --color=always"
 alias lsfor="\ls -1"
-alias mem_clear='sudo mem_clear'
+# alias mem_clear='sudo mem_clear'
 alias mkdir='mkdir -pv'
-alias mozjpeg="/opt/libmozjpeg/bin/jpegtran"
+# alias mozjpeg="/opt/libmozjpeg/bin/jpegtran"
 alias mv='mv -v'
-alias net_restart='sudo /etc/rc.d/network restart'
-alias netfor="sudo sysctl -w net.ipv4.ip_forward=1; sudo iptables -t nat -A POSTROUTING -o $1 -j MASQUERADE"
-alias proz='proz -r'
+# alias net_restart='sudo /etc/rc.d/network restart'
+# alias netfor="sudo sysctl -w net.ipv4.ip_forward=1; sudo iptables -t nat -A POSTROUTING -o $1 -j MASQUERADE"
+# alias proz='proz -r'
 alias pyserver="python -m SimpleHTTPServer"
 alias rm='rm -iv'
 alias sed="sed -r"
-alias smbrefresh="sudo \"service smbd restart;service nmbd restart\""
-alias svim="sudo vim"
-alias svns="svnserve -d -r /home/fabio/auxiliar.svn"
+# alias smbrefresh="sudo \"service smbd restart;service nmbd restart\""
+# alias svim="sudo vim"
+# alias svns="svnserve -d -r /home/fabio/auxiliar.svn"
 alias swap2ram="sudo swapoff -a; swapon -a; sysctl -w vm.drop_caches=3"
-alias tb="~/thunderbird/thunderbird"
-alias vboxstart='sudo modprobe vboxdrv && sudo modprobe vboxnetflt'
-alias vboxstop='sudo modprobe -r vboxdrv && sudo modprobe -r vboxnetflt'
+# alias tb="~/thunderbird/thunderbird"
+# alias vboxstart='sudo modprobe vboxdrv && sudo modprobe vboxnetflt'
+# alias vboxstop='sudo modprobe -r vboxdrv && sudo modprobe -r vboxnetflt'
 alias vi="vim"
-alias yoinstall="yaourt -S"
-alias yopurge="yaourt -Rcsn"
-alias youpgrade="yaourt -Suy"
+# alias yoinstall="yaourt -S"
+# alias yopurge="yaourt -Rcsn"
+# alias youpgrade="yaourt -Suy"
 alias zpub="zip -0 $1 mimetype && zip -9 -r $1 META-INF OEBPS"
 
 # Esses alias permitem abrir um arquivo diretamente (ex, % file.txt e o vim já é aberto).
