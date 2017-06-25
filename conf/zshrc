@@ -182,30 +182,30 @@ zmodload -i zsh/mathfunc
 zmodload -i zsh/complist
 
 # Aliases
-# alias smbrefresh="sudo \"service smbd restart;service nmbd restart\""
+alias smbrefresh="sudo \"service smbd restart;service nmbd restart\""
 alias netfor="sudo sysctl -w net.ipv4.ip_forward=1; sudo iptables -t nat -A POSTROUTING -o $1 -j MASQUERADE"
 alias gingadd="echo \"$1\" >> .gitignore"
 alias hsize="df -h | grep /home"
-# alias svns="svnserve -d -r /home/fabio/auxiliar.svn"
+alias svns="svnserve -d -r /home/fabio/auxiliar.svn"
 alias ls="ls -lahtF --group-directories-first --color=always"
 alias lsfor="\ls -1"
 alias dorp="deborphan | sudo xargs apt-get purge -y"
 alias fedorp="sudo \"package-cleanup --leaves -q | xargs yum remove -y;package-cleanup --orphans -q | xargs yum remove -y\""
-# alias gcc='gcc -Wall'
+alias gcc='gcc -Wall'
 alias rm='rm -iv'
 alias cp="cp -a"
-# alias mv='mv -v'
-# alias mkdir='mkdir -pv'
-# alias mem_clear='sudo mem_clear'
-# alias proz='proz -r'
-# alias vboxstart='sudo modprobe vboxdrv && sudo modprobe vboxnetflt'
-# alias vboxstop='sudo modprobe -r vboxdrv && sudo modprobe -r vboxnetflt'
-# alias vi="vim"
-# alias net_restart='sudo /etc/rc.d/network restart'
-# alias db.lck_rm='sudo rm -rf /var/lib/pacman/db.lck'
-# alias svim="sudo vim"
-# alias apt-update="update-manager"
-# alias apt-dist="update-manager -c"
+alias mv='mv -v'
+alias mkdir='mkdir -pv'
+alias mem_clear='sudo mem_clear'
+alias proz='proz -r'
+alias vboxstart='sudo modprobe vboxdrv && sudo modprobe vboxnetflt'
+alias vboxstop='sudo modprobe -r vboxdrv && sudo modprobe -r vboxnetflt'
+alias vi="vim"
+alias net_restart='sudo /etc/rc.d/network restart'
+alias db.lck_rm='sudo rm -rf /var/lib/pacman/db.lck'
+alias svim="sudo vim"
+alias apt-update="update-manager"
+alias apt-dist="update-manager -c"
 alias ff="~/firefox/firefox"
 alias tb="~/thunderbird/thunderbird"
 alias sed="sed -r"
@@ -218,8 +218,8 @@ alias mozjpeg="/opt/libmozjpeg/bin/jpegtran"
 alias yopurge="yaourt -Rcsn"
 alias yoinstall="yaourt -S"
 alias youpgrade="yaourt -Suy"
-# alias epc="java -jar /opt/epubcheck/epubcheck.jar -m opf -m xhtml -v 3.0"
-# alias zpub="zip -0 $1 mimetype && zip -9 -r $1 META-INF OEBPS"
+alias epc="java -jar /opt/epubcheck/epubcheck.jar -m opf -m xhtml -v 3.0"
+alias zpub="zip -0 $1 mimetype && zip -9 -r $1 META-INF OEBPS"
 
 # Esses alias permitem abrir um arquivo diretamente (ex, % file.txt e o vim já é aberto).
 alias -s html=$BROWSER
