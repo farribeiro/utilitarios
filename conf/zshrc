@@ -303,6 +303,12 @@ for i in `\ls -1`; do
 done
 }
 
+dk-images-upgrades(){
+	for i in `docker images --format={{.Repository}}:{{.Tag}}`; do
+		docker pull $i;
+	done
+}
+
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
