@@ -221,6 +221,7 @@ alias vi="vim"
 # alias youpgrade="yaourt -Suy"
 alias zpub="zip -0 $1 mimetype && zip -9 -r $1 META-INF OEBPS"
 alias dk-containers-purge="docker rm $(docker ps -a -q)"
+alias dk-images-purgeunstaged="docker rmi $(docker images -f dangling=true --format={{.ID}})"
 
 # Esses alias permitem abrir um arquivo diretamente (ex, % file.txt e o vim já é aberto).
 alias -s html=$BROWSER
