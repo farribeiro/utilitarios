@@ -49,5 +49,5 @@ map <F5> <ESC>:source ~/.vimrc<CR>
 "Primeira letra maiúscula
 map <F9> <ESC>:%s/[.!?]\_s\+\a/\U&\E/gc<CR>
 
-"Limpa espaço em branco no fim da linha
-map <F8> <ESC>:%s/ \+$//gc<CR>
+"Padroniza arquivos
+map <F8> <ESC>:%s/ \+$//g<CR><ESC>:setlocal nobomb<CR><ESC>:set enc=utf8<CR><ESC>:set fenc=utf8<CR><ESC>:set fileformat=unix<CR>
