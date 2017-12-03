@@ -1,7 +1,7 @@
 set nocompatible
 
 syntax on "Coloração do texto para salvar arquivo
-set textwidth=80 "Comprimento da linha
+" set textwidth=80 "Comprimento da linha
 set background=dark "Cores para fundo preto
 set fenc=utf8 "Define enconding do arquivo
 set enc=utf8 "Define encoding do texto
@@ -50,4 +50,5 @@ map <F5> <ESC>:source ~/.vimrc<CR>
 map <F9> <ESC>:%s/[.!?]\_s\+\a/\U&\E/gc<CR>
 
 "Padroniza arquivos
+"map <F8> <ESC>:%s/ \+$//g<CR><ESC>:%s/\%xa0/ /g<CR><ESC>:setlocal nobomb<CR><ESC>:set enc=utf8<CR><ESC>:set fenc=utf8<CR><ESC>:set fileformat=unix<CR>
 map <F8> <ESC>:%s/ \+$//g<CR><ESC>:setlocal nobomb<CR><ESC>:set enc=utf8<CR><ESC>:set fenc=utf8<CR><ESC>:set fileformat=unix<CR>
