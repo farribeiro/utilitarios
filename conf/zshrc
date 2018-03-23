@@ -220,6 +220,7 @@ alias vi="vim"
 # alias yopurge="yaourt -Rcsn"
 # alias youpgrade="yaourt -Suy"
 alias zpub="zip -0 $1 mimetype && zip -9 -r $1 META-INF OEBPS"
+alias gh-sync="git fetch upstram && git checkout master && git merge upstream/master"
 
 # Esses alias permitem abrir um arquivo diretamente (ex, % file.txt e o vim já é aberto).
 alias -s html=$BROWSER
