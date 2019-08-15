@@ -37,11 +37,13 @@ class energia:
 		return self.__KWh * self.__horas4dia * self.__dias
 
 	def estimativas(self):
-		print("\n**********ESTIMATIVAS**********")
-		print "\n%.2f kWh x %.2f = R$ %.2f/hora" % (self.__KWh, self.__preco, self.custo4hora())
-		print "\nCusto de R$ %.2f/dia" % self.custo4dia()
-		print "Custo de R$ %.2f/mês (24x7)" % self.custo4mes()
-		print "\n%.2f x %.2f x %.2f = %.2f kWh/mês" % (self.__KWh, self.__horas4dia, self.__dias, self.kwh4mes())
+		print("\n**********ESTIMATIVAS GLOBAIS**********")
+		print("\n%.2f kWh x %.2f = R$ %.2f/hora" % (self.__KWh,
+		self.__preco, self.custo4hora()))
+		print("Custo de R$ %.2f/dia" % (self.custo4dia()))
+		print("Custo de R$ %.2f/mês (24x7)" % (self.custo4mes()))
+		print("\n%.2f x %.0f x %.0f = %.2f kWh/mês" % (self.__KWh,
+		self.__horas4dia, self.__dias, self.kwh4mes()))
 
 	def custos(self):
 		horas4dia = float(input("Quantas horas por dias usa o equipamento: "))
