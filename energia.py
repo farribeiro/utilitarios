@@ -43,6 +43,11 @@ class energia:
 		print "Custo de R$ %.2f/mês (24x7)" % self.custo4mes()
 		print "\n%.2f x %.2f x %.2f = %.2f kWh/mês" % (self.__KWh, self.__horas4dia, self.__dias, self.kwh4mes())
 
+	def custos(self):
+		horas4dia = float(input("Quantas horas por dias usa o equipamento: "))
+		dias = float(input("Quantos dias usa o equipamento: "))
+		preco_final = self.custo4hora() * horas4dia * dias
+		print("\nCusto de R$ %.2f" % (preco_final))
 
 
 	def __init__(self):
@@ -58,17 +63,8 @@ class energia:
 		else:
 			ptnc = float(input("Potência(W): "))
 		self.__KWh = self.potencia4kwh(ptnc)
-
-		self.__preco = float(raw_input ("Preço(KWh): "))
-
 		self.estimativas()
-
-		print("\n*******************************\n")
-
-		horas4dia = float(raw_input("Quantas horas por dias usa o equipamento: "))
-		dias = float(raw_input("Quantos dias usa o equipamento: "))
-
-		preco_final = self.custo4hora() * horas4dia * dias
-		print "\nCusto de R$ %.2f" % preco_final
+		print("\n***************************************\n")
+		self.custos()
 
 g = energia();
