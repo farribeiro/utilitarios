@@ -43,13 +43,20 @@ class energia:
 		print "Custo de R$ %.2f/mês (24x7)" % self.custo4mes()
 		print "\n%.2f x %.2f x %.2f = %.2f kWh/mês" % (self.__KWh, self.__horas4dia, self.__dias, self.kwh4mes())
 
-		# amp  = raw_input("Amperes: ")
-		# volts = raw_input("Voltagem: ")
-		# ptnc = self.potencia(amp,volts)
 
 
-		ptnc = float(raw_input("Potencia(W): "))
 	def __init__(self):
+		self.__preco = float(input ("Preço(KWh): "))
+		try:
+			amp = float(input("Amperes: "))
+			volts = float(input("Voltagem: "))
+		except ValueError:
+			amp = None
+			volts = None
+		if ((amp is not None) and (volts is not None)):
+			ptnc = self.potencia(amp,volts)
+		else:
+			ptnc = float(input("Potência(W): "))
 		self.__KWh = self.potencia4kwh(ptnc)
 
 		self.__preco = float(raw_input ("Preço(KWh): "))
