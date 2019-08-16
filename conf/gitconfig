@@ -4,6 +4,7 @@
 	cl = clone
 	br = branch
 	ci = commit
+	mg = merge --no-ff
 	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 	histdel = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short --diff-filter=D --summary
 
