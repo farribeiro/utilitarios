@@ -57,14 +57,10 @@ class energia:
 		try:
 			amp = float(input("Amperes: "))
 			volts = float(input("Voltagem: "))
-		except ValueError:
-			amp = None
-			volts = None
-		if ((amp is not None) and (volts is not None)):
 			ptnc = self.potencia(amp,volts)
-		else:
+		except ValueError:
 			ptnc = float(input("Potência(W): "))
-		self.__KWh = self.potencia4kwh(ptnc)
+			self.__KWh = self.potencia4kwh(ptnc)
 		self.estimativas()
 		print("\n***************************************\n")
 		self.custos()
