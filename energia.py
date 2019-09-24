@@ -60,7 +60,8 @@ class energia:
 			ptnc = self.potencia(amp,volts)
 		except ValueError:
 			ptnc = float(input("Potência(W): "))
-			self.__KWh = self.potencia4kwh(ptnc)
+
+		self.__KWh = self.potencia4kwh(ptnc)
 		self.estimativas()
 		print("\n***************************************\n")
 		self.custos()
