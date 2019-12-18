@@ -205,7 +205,7 @@ alias mv='mv -v'
 # alias net_restart='sudo /etc/rc.d/network restart'
 # alias netfor="sudo sysctl -w net.ipv4.ip_forward=1; sudo iptables -t nat -A POSTROUTING -o $1 -j MASQUERADE"
 # alias proz='proz -r'
-alias pyserver="python -m SimpleHTTPServer"
+alias pyserver="python3 -m http.server"
 alias rm='rm -iv'
 alias sed="sed -r"
 # alias smbrefresh="sudo \"service smbd restart;service nmbd restart\""
